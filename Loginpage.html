@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <link href="Loginpage.css" rel="stylesheet">
+
+        <title>Login Page</title>
+        <script>
+            function required()
+            {
+                var empt = document.forms["form"]["fname"].value;
+                if (empt == "")
+                {
+                    alert("Please input a Value");
+                    return false;
+                }
+                if ( document.form.qualification.selectedIndex == 0 )
+                {
+                    alert ( "Please select your qualification." );
+                    valid = false;
+                }
+                var url=document.forms["form"]["qualification"].value;
+                
+                window.open(url);
+                
+            }
+            function Show(elem){
+                elem.style.display="inline-block";
+            }
+            function Hide(elem){
+                elem.style.display="";
+            }
+          </script>
+    </head>
+    <body> 
+        <h1> <bold>STUDENT DETAILS</bold></h1>
+        <h3>Enter your detail:</p>
+        <form name="form" onsubmit="required()" action="Formaction.php" method="post">
+            <div onmouseover="Show(fn)" onmouseout="Hide(fn)">
+                NAME :<input type="text" name="fname" id="fname" value=""><small><small>*Required</small></small><br>
+                <div class="tooltip" id="fn">Please enter your name!!</div><br>
+            </div>
+            <div onmouseover="Show(ag)" onmouseout="Hide(ag)">
+                AGE :<input type="text" name="age" id="age" value=""><br>
+                <div class="tooltip" id="ag">Please enter your age!!</div><br>
+            </div>
+            <div onmouseover="Show(tel)" onmouseout="Hide(tel)">
+                PHONE NUMBER: <input type="tel" name="phone" id="phone" pattern="[0-9]{4}-[0-9]{2}-[0-9]{4}"><small><small>*Format: 1234-56-7890</small></small><br>
+                <div class="tooltip" id="tel">Please enter your phone number!!</div><br>
+            </div>
+            <div onmouseover="Show(eml)" onmouseout="Hide(eml)">
+                EMAIL ID: <input type="email" name="mail" id="mail" value=""><br>
+                <div class="tooltip" id="eml">Please enter your mailid!!</div><br>
+            </div>
+            <div onmouseover="Show(qlf)" onmouseout="Hide(qlf)">
+                QUALIFICATION: <select name="qualification" id="qualification">
+                    <option value=""></option>
+                    <option value="sslc.html">SSLC</option>
+                    <option value="Puc.html">PUC</option>
+                    <option value="graduation.html">GRADUATION</option>
+                </select><br>
+                <div class="tooltip" id="qlf">Please select your qualification!!</div><br>
+            </div>
+            <input type="submit" name="submit" value="Submit" id="submit"></submit>
+        </form>
+        
+    </body>
+</html>

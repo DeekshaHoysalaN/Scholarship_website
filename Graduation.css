@@ -1,0 +1,52 @@
+@keyframes AnimateBG { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+body{
+    margin: 0;
+    background: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-size: 300% 300%;
+    background-image: linear-gradient(
+          -45deg, 
+          rgb(22, 223, 183) 0%, 
+          rgb(87, 230, 220) 25%, 
+          rgb(226, 154, 252) 51%, 
+          rgba(255, 133, 155, 0.962) 100%
+    );  
+    animation: AnimateBG 5s ease infinite;
+    }
+    
+    h1{
+        color: rgb(19, 19, 157);
+        text-shadow: 2px 2px 1px rgb(156, 237, 237);
+        font-size: 32px;
+        text-align: center;
+    }
+    table,th,td
+    {
+        border: 2px groove rgba(61, 170, 238, 0.874);
+    }
+    th{
+        font-size: 20px;
+        color: rgb(214, 52, 246);
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    td{
+        font-size: 17px;
+        color: rgba(4, 31, 37, 0.619);
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+    }
+    tr td a{
+        color: rgb(13, 13, 238);
+    }
+    tr td a:hover{
+        color: rgb(66, 126, 254);
+        background-color: rgb(255, 255, 255);
+    
+    }

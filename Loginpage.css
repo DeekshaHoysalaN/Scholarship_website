@@ -1,0 +1,57 @@
+body{
+    background-image: url("Student.jpeg");
+    background-size: cover;
+    position: relative;
+    text-align: center; 
+}
+h1{
+    color: rgb(51, 51, 137) ;
+    text-decoration: double;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;
+    text-shadow: 3px 3px 2px rgb(5, 206, 206) ;
+}
+h3{
+    color:rgb(92, 241, 241);
+    text-shadow: 2px 2px 2px rgb(8, 52, 8);
+}
+form{
+    font-size: 25px;
+    font-weight: 500;
+    color:white;
+    text-decoration: double;
+}
+#submit{
+    color: rgb(245, 254, 72);
+    background-color: rgb(14, 173, 110);
+    padding:0.5%;
+    font-size: 20px;
+    border: 5px blueviolet double;
+}
+#submit:hover {
+    background: rgb(245, 254, 72);
+    color: rgb(14, 173, 110);
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #eee;
+}
+#qualification{
+    color: rgb(236, 201, 254);
+    background-color: rgb(253, 253, 253);
+    font-size: 20px;
+}
+#qualification:hover{
+    background-color: rgb(229, 182, 253) ;
+    color: rgb(252, 250, 251);
+}
+    
+.tooltip{
+    position:relative;
+    width:100px;
+    height: 50px;
+    border:2px double rgb(144, 144, 252);
+    display:none;
+    color: rgb(150, 205, 253);
+    font-size: 15px;
+
+}
